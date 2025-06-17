@@ -1,5 +1,0 @@
-Tudo bem?
-
-Este aquirvo foi criado na primeira aula do programa do +Dev2Blu no dia 17/06/2025 às 7:40:35 
-
-A aula era sobre Git e Github
