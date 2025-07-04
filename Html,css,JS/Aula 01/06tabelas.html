@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Kaio Levi Pollhein">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06 - Tabelas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+</head>
+
+<body>
+   <!-- exemplo 01 -->
+    <table border="1">
+        <tr>
+            <td>Java</td>
+            <td>C#</td>
+            <td>Python</td>
+        </tr>
+
+        <tr>
+            <td>html</td>
+            <td>CSS</td>
+            <td>JavaScript</td>
+        </tr>
+    </table>
+
+    <!-- Linha -->
+    <hr>
+
+     <!-- Exemplo 02 -->
+    <table border="1">
+        <!-- cabeçalho de tabela -->
+        <thead>
+            <tr>
+                <th>Curso</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <!-- corpo de tabela -->
+        <tbody>
+            <tr>
+                <td>Java</td>
+                <td>Noturno</td>
+            </tr>
+
+            <tr>
+                <td>Python</td>
+                <td>Matutino</td>
+            </tr>
+            
+            <tr>
+                <td>C#</td>
+                <td>Noturno</td>
+            </tr>
+        </tbody>
+        <!-- rodape de tabela -->
+         <tfoot>
+            <tr>
+                <td colspan="2">Total: 3 cursos</td>
+            </tr>
+         </tfoot>
+    </table>
+
+    <!-- linha -->
+     <hr>
+
+     <!-- Exemplo 03 -->
+      <table border="1">
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+            
+        </tr>
+
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        
+        <tr>
+            
+            <td>8</td>
+            <td>9</td>
+        </tr>
+      </table>
+</body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+</html>
