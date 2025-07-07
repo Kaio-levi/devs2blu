@@ -8,13 +8,41 @@
   <meta name="author" content="Kaio Levi Pollhein">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valor moeda</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <h1>Conversor de Moedas</h1>
-   <input type="tel" id="valor-da moeda">
+   <div class="container">
+    <h1>Conversor de moedas</h1>
 
+    <input type="number" id="Valor" placeholder="Valor">
+    
+    <br>
+    <div class="convertores">
+    <select id="de">
+      <option value="BRL">Real (BRL)</option>
+      <option value="USD">Dólar (USD)</option>
+      <option value="GBP">Libra (GBP)</option>
+      <option value="BTC">Bitcoin (BTC)</option>
+    </select>
+    
+    <span>→</span>
+
+    <select id="para">
+      <option value="BRL">Real (BRL)</option>
+      <option value="USD">Dólar (USD)</option>
+      <option value="GBP">Libra (GBP)</option>
+      <option value="BTC">Bitcoin (BTC)</option>
+    </select>
+  </div>
+    <br>
+  
+  
+  <button onclick="converter()" id="botao">Converter</button>
+  
+  <div id="resultado"></div>
+  
+</div>
 </body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
