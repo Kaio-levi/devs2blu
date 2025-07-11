@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Kaio Levi Pollhein">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD - PRODUTOS</title>
+
+  <!-- anexar folha de estilos -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <!-- formulario -->
+    <form action="">
+        <input type="text" class="form-control" placeholder="id" id="id" readonly="readonly">
+        <input type="text" class="form-control" placeholder="Nome" id="nome">
+        <input type="text" class="form-control" placeholder="Marca" id="marca">
+        <input type="text" class="form-control" placeholder="Valor"id="valor">
+
+        <input type="button" value="Cadastrar" onclick="cadastrar()" class="btn btn-primary" id="btnCadastrar">
+        <input type="button" onclick="alterar()" value="Alterar"class="btn btn-primary" id="btnAlterar">
+        <input type="button" onclick="deletar()" value="Remover" class="btn btn-primary" id="btnRemover">
+        <input type="button" onclick="cancelar()" value="Cancelar"class="btn btn-primary" id="btnCancelar">
+    </form>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Marca</th>
+                <th>valor</th>
+                <th>selecionar</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabela"></tbody>
+    </table>
+    <!-- SCRIPT -->
+     <script src="script.js"></script>
+</body>
+</html>

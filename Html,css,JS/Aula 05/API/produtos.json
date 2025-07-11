@@ -1,0 +1,40 @@
+{
+  "produtos": [
+    {
+      "nome": "tv peixer",
+      "marca": "Samsumg",
+      "valor": 3200,
+      "id": "b553"
+    },
+    {
+      "id": "349b",
+      "nome": "BMW M3 GTR",
+      "marca": "BMW",
+      "valor": "120000000"
+    },
+    {
+      "id": "0fa8",
+      "nome": "iphone 16",
+      "marca": "apple",
+      "valor": 7500
+    },
+    {
+      "id": "4147",
+      "nome": "Galaxy A52",
+      "marca": "Samsumg",
+      "valor": 2400
+    },
+    {
+      "id": "0cc5",
+      "nome": "Playstation 5",
+      "marca": "Sony",
+      "valor": 3500
+    },
+    {
+      "id": "69c1",
+      "nome": "Xbox Sereis X",
+      "marca": "Microsoft",
+      "valor": 3400
+    }
+  ]
+}
