@@ -1,0 +1,244 @@
+{
+    "produtos": [
+        {
+            "id": "001",
+            "nome": "Processador AMD Ryzen 5 5600X",
+            "qtdEstoque": 50,
+            "imagem":"/backend/imagens/ryzen5600x.jpeg",
+            "categoria": "Processador",
+            "valor": 1299.90
+        },
+        {
+            "id": "002",
+            "nome": "Placa de Vídeo NVIDIA GeForce RTX 3060 12GB",
+            "imagem":"/backend/imagens/RTX 3060.jpeg",
+            "qtdEstoque": 30,
+            "categoria": "Placa-de-Video",
+            "valor": 2199.99
+        },
+        {
+            "id": "003",
+            "nome": "Monitor Gamer LG UltraGear 27\" 144Hz Full HD",
+            "imagem":"/backend/imagens/Monitor LG UltraGear.jpeg",
+            "qtdEstoque": 20,
+            "categoria": "Monitor",
+            "valor": 1499.90
+        },
+        {
+            "id": "004",
+            "nome": "Teclado Mecânico Redragon K552 Kumara RGB",
+            "qtdEstoque": 100,
+            "imagem":"/backend/imagens/K55 Kumara RGB.jpg",
+            "categoria": "Teclado",
+            "valor": 299.90
+        },
+        {
+            "id": "005",
+            "nome": "Mouse Gamer Logitech G203 Lightsync",
+            "imagem":"/backend/imagens/G203.jpeg",
+            "qtdEstoque": 80,
+            "categoria": "Mouse",
+            "valor": 199.90
+        },
+        {
+            "id": "006",
+            "nome": "Headset Gamer HyperX Cloud Stinger 2",
+            "imagem":"/backend/imagens/Cloud Stinger 2.png",
+            "qtdEstoque": 60,
+            "categoria": "Headset",
+            "valor": 349.90
+        },
+        {
+            "id": "007",
+            "nome": "Placa-Mãe ASUS TUF Gaming B550-PLUS",
+            "imagem":"/backend/imagens/b550-plus.jpeg",
+            "qtdEstoque": 25,
+            "categoria": "Placa-Mãe",
+            "valor": 899.90
+        },
+        {
+            "id": "008",
+            "nome": "Memória RAM Corsair Vengeance 16GB DDR4 3200MHz",
+            "imagem":"/backend/imagens/Vengeance LPX.jpeg",
+            "qtdEstoque": 70,
+            "categoria": "Memória-RAM",
+            "valor": 399.90
+        },
+        {
+            "id": "009",
+            "nome": "SSD NVMe Kingston NV2 1TB",
+            "imagem":"/backend/imagens/ssd nv2 kingston.jpeg",
+            "qtdEstoque": 40,
+            "categoria": "Armazenamento",
+            "valor": 499.90
+        },
+        {
+            "id": "010",
+            "nome": "Fonte Corsair CX650M 650W 80 Plus Bronze",
+            "imagem":"/backend/imagens/CX650M.jpeg",
+            "qtdEstoque": 35,
+            "categoria": "Fonte",
+            "valor": 429.90
+        },
+        {
+            "id": "011",
+            "nome": "Gabinete Gamer Cooler Master MasterBox TD500",
+            "imagem":"/backend/imagens/td500.png",
+            "qtdEstoque": 15,
+            "categoria": "Gabinete",
+            "valor": 599.90
+        },
+        {
+            "id": "012",
+            "nome": "Cadeira Gamer DXRacer Drifting Series",
+            "imagem":"/backend/imagens/DXRacer.png",
+            "qtdEstoque": 10,
+            "categoria": "Cadeira Gamer",
+            "valor": 1599.90
+        },
+        {
+            "id": "013",
+            "nome": "Processador Intel Core i5-12400F",
+            "imagem":"/backend/imagens/core i5 12th.jpeg",
+            "qtdEstoque": 45,
+            "categoria": "Processador",
+            "valor": 1099.90
+        },
+        {
+            "id": "014",
+            "nome": "Placa de Vídeo AMD Radeon RX 6700 XT 12GB",
+            "imagem":"/backend/imagens/rx 6700 xt.jpg",
+            "qtdEstoque": 20,
+            "categoria": "Placa-de-Video",
+            "valor": 2799.90
+        },
+        {
+            "id": "015",
+            "nome": "Monitor AOC Hero 24\" 165Hz IPS",
+            "imagem":"/backend/imagens/AOC HERO.jpeg",
+            "qtdEstoque": 30,
+            "categoria": "Monitor",
+            "valor": 1199.90
+        },
+        {
+            "id": "016",
+            "nome": "Teclado Mecânico Razer BlackWidow V4 Pro",
+            "imagem":"/backend/imagens/v4 pro.png",
+            "qtdEstoque": 25,
+            "categoria": "Teclado",
+            "valor": 1299.90
+        },
+        {
+            "id": "017",
+            "nome": "Mouse Gamer Razer DeathAdder V3",
+            "imagem":"/backend/imagens/DeathAdder V3.jpeg",
+            "qtdEstoque": 50,
+            "categoria": "Mouse",
+            "valor": 399.90
+        },
+        {
+            "id": "018",
+            "nome": "Headset Gamer Logitech G Pro X",
+            "imagem":"/backend/imagens/G PRO X.jpeg",
+            "qtdEstoque": 40,
+            "categoria": "Headset",
+            "valor": 799.90
+        },
+        {
+            "id": "019",
+            "nome": "placa--Mãe MSI B450 Tomahawk MAX",
+            "imagem":"/backend/imagens/tomahawk Max.jpeg",
+            "qtdEstoque": 20,
+            "categoria": "Placa-Mãe",
+            "valor": 699.90
+        },
+        {
+            "id": "020",
+            "nome": "Memória RAM HyperX Fury 32GB DDR4 3600MHz",
+            "imagem":"/backend/imagens/Hyperx.jpeg",
+            "qtdEstoque": 30,
+            "categoria": "Memória-RAM",
+            "valor": 799.90
+        },
+        {
+            "id": "021",
+            "nome": "SSD SATA Crucial MX500 500GB",
+            "imagem":"/backend/imagens/mx500.png",
+            "qtdEstoque": 60,
+            "categoria": "Armazenamento",
+            "valor": 299.90
+        },
+        {
+            "id": "022",
+            "nome": "Fonte EVGA 750W 80 Plus Gold",
+            "imagem":"/backend/imagens/750.jpeg",
+            "qtdEstoque": 25,
+            "categoria": "Fonte",
+            "valor": 649.90
+        },
+        {
+            "id": "023",
+            "nome": "Gabinete NZXT H510 Flow",
+            "imagem":"/backend/imagens/NZXT.jpg",
+            "qtdEstoque": 15,
+            "categoria": "Gabinete",
+            "valor": 499.90
+        },
+        {
+            "id": "024",
+            "nome": "Cadeira Gamer ThunderX3 TC3",
+            "imagem":"/backend/imagens/ThunderX3 TC3.png",
+            "qtdEstoque": 12,
+            "categoria": "Cadeira Gamer",
+            "valor": 1299.90
+        },
+        {
+            "id": "025",
+            "nome": "Webcam Logitech C920 HD Pro",
+            "imagem":"/backend/imagens/C920S.png",
+            "qtdEstoque": 50,
+            "categoria": "Webcam",
+            "valor": 399.90
+        },
+        {
+            "id": "026",
+            "nome": "Microfone HyperX QuadCast S",
+            "imagem":"/backend/imagens/quadcast s.jpeg",
+            "qtdEstoque": 20,
+            "categoria": "Microfone",
+            "valor": 899.90
+        },
+        {
+            "id": "027",
+            "nome": "Mousepad Gamer Corsair MM700 RGB",
+            "imagem":"/backend/imagens/mousepad.jpeg",
+            "qtdEstoque": 70,
+            "categoria": "Mousepad",
+            "valor": 249.90
+        },
+        {
+            "id": "028",
+            "nome": "Cooler CPU Noctua NH-U12S",
+            "imagem":"/backend/imagens/Noctua NH-U12S.jpeg",
+            "qtdEstoque": 30,
+            "categoria": "Cooler",
+            "valor": 499.90
+        },
+        {
+            "id": "029",
+            "nome": "Smart TV Samsung 55\" 4K QLED",
+            "imagem":"/backend/imagens/Smart TV 55_ QLED 4K.png",
+            "qtdEstoque": 10,
+            "categoria": "Televisão",
+            "valor": 3999.90
+        },
+        {
+            "id": "030",
+            "nome": "Console Sony PlayStation 5 Slim",
+            "imagem":"/backend/imagens/PlayStation 5 Slim.jpeg",
+            "qtdEstoque": 15,
+            "categoria": "Console",
+            "valor": 4299.90
+        }
+    ]
+}

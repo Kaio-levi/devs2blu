@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.entradas {
+    width: 300px;
+    justify-content: center;
+}
+
+.botoes {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+
+.lista {
+    margin-top: 20px;
+    width: 300px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "produtos",
+  "version": "1.0.0",
+  "description": "produtos da atividade avaliativa do ralf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "json-server",
+    "js"
+  ],
+  "author": "Kaio Levi Pollhein",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
