@@ -39,13 +39,13 @@
             <p>Categoria: ${produto.categoria}</p>
             <p>Preço: R$${produto.valor.toFixed(2)}</p>
             <p>Estoque: ${produto.qtdEstoque}</p>
-            <button onclick='adicionarAoCarrinho(${JSON.stringify(produto)})' class="buy-button>Adicionar ao carrinho</button>
+            <button class="buy-button" date-produto'${JSON.stringify(produto)}''>Adicionar ao carrinho</button>
           `;
           container.appendChild(card);
         });
 
       } catch (error) {
-        alert(`<P>Erro: ${error.message}.</p>`);
+        container.innerHTML = `<P>Erro: ${error.message}.</p>`;
       }
     });
 

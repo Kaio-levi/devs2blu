@@ -14,15 +14,23 @@
 
 <body>
   <header>
-    <img src="images\Logo.png" alt="Logo da HardTech">
+    <img src="images\Logo.png" id="Logo" alt="Logo da HardTech">
     <h1 id="titulo-site">HardTech</h1>
 
     <nav>
       <a href="#" onclick="mostrarProcessadores(event)">Processadores</a>
       <a href="#" onclick="mostrarPlacasDeVideos(event)">Placas de video</a>
       <a href="#" onclick="mostrarRAM(event)">Memórias RAMs</a>
+      <a href="#" onclick="mostrarMonitores(event)">Monitor</a>
+      <a href="#" onclick="mostrarTeclados(event)">Teclado</a>
+      <a href="#" onclick="mostrarMouses(event)">Mouse</a>
+      <a href="#" onclick="mostrarHeadsets(event)">Headset</a>
+      <a href="#" onclick="mostrarArmazenamentos(event)">Armazenamento</a>
+      <a href="#" onclick="mostrarFontes(event)">Fonte</a>
+      <a href="#" onclick="mostrarGabinetes(event)">Gabinete</a>
       <a href="#" onclick="mostrarTudo(event)">Todos os produtos</a>
-      <a href="carrinho.html">Carrinho</a>
+      <a href="#" onclick="mostrarCadeiraGamer(event)">Cadeira Gamer</a>
+      <a href="carrinho.html">🛒</a>
     </nav>
 
     <form id="form-busca" action="http://localhost:3000/produtos" method="get">
@@ -38,6 +46,19 @@
   <script src="scripts/catalog.js"></script>
   <script src="scripts/search.js"></script>
   <script src="scripts/cart.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('produtos-container');
+      container.addEventListener('click', (event) => {
+        if (event.target.classList.contains('buy-button')) {
+          const produto = JSON.parse(event.target.dataset.produto);
+          adicionarAoCarrinho(produto);
+        }
+      });
+      mostrarTudo(new Event('click')); // Simula um clique para carregar todos os produtos
+    });
+  </script>
 
 </body>
 

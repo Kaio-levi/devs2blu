@@ -7,21 +7,27 @@
   <meta name="keywords" content="">
   <meta name="author" content="Kaio Levi Pollhein">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Carrinho</title>
 </head>
 
 <body>
+  <div id="main-container">
   <header>
     <img src="images/Logo.png" alt="Logo da HardTech">
-    <h1 id="titulo-site">HardTech - Carrinho</h1>
+    <h1 id="titulo-site">Carrinho</h1>
     <nav>
       <a href="index.html">Voltar ao catalogo</a>
     </nav>
+    <button class="nav-toggle"></button>
   </header>
 
   <div class="card-container" id="carrinho-container"></div>
-  <button id="Limpar-carrinho" class="buy-botton">Limpar Carrinho</button>
-
+  <div class="cart-summary">
+  <button id="limpar-carrinho" class="buy-button">Limpar Carrinho</button>
+  <button id="finalizar-compra" class="buy-button">Finalizar Compra!</button>
+  </div>
+</div>
   <script src="scripts/cart.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -31,6 +37,12 @@
         limparButton.addEventListener('click', limparCarrinho);
       } else {
         console.error('Elemento com ID "limpar-carrinho" não encontrado.');
+      }
+      const finalizarButton = document.getElementById('finalizar-compra');
+      if(finalizarButton){
+        finalizarButton.addEventListener('click', finalizarCompra);
+      } else {
+        console.error('Elemento com ID "finalizar-compra" não encotrado')
       }
     });
   </script>

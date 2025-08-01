@@ -1,8 +1,163 @@
-.card-container {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d9e2e6;
+  color: #191c1d;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#main-container {
+  flex: 1 0 auto;
+  /* Ocupa todo o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+header {
+  background-color: #191c1d;
+  /* Cinza Escuro para cabeçalho */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+header img {
+  max-width: 100px;
+}
+
+header h1 {
+  font-size: 50pt;
+  margin: 0;
+}
+
+nav {
+  background-color: #191c1d;
+  /* Cinza Escuro para consistência */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* Reduzido para caber mais links */
+  width: 100%;
+  flex-wrap: wrap;
+  /* Permite que links quebrem em várias linhas */
+  overflow-x: auto;
+  /* Rolagem horizontal se necessário */
+  -webkit-overflow-scrolling: touch;
+  /* Suave em dispositivos móveis */
+}
+
+.nav-toggle {
+  display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #4dc1ee;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Força uma largura mínima */
+    height: 40px;
+}
+
+nav a {
+  background-color: #4dc1ee;
+  /* Azul Primário para links */
+  color: #191c1d;
+  /* Cinza Escuro para texto dos links */
+  text-decoration: none;
+  padding: 10px 12px;
+  /* Reduzido para caber mais links */
+  border-radius: 13px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  /* Evita que o texto quebre */
+  flex-shrink: 0;
+}
+
+header a:hover {
+  color: #2a9fd6;
+  background-color: #d9e2e6;
+}
+
+header a:active {
+  box-shadow: 0 5px #777777;
+  transform: translateY(2px);
+}
+
+#form-busca {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 5px;
+  /* Espaço entre input e button */
+}
+
+#form-busca input {
+  margin: 0;
+  padding: 8px;
+  width: 500px;
+  max-width: 70%;
+  border-radius: 13px;
+  transition: all 0.3s ease;
+}
+
+#form-busca button {
+    padding: 8px 15px;
+    background-color: #4dc1ee;
+    color: white;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#form-busca button:hover {
+    background-color: #2a9fd6;
+}
+
+#form-busca input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4dc1ee;
+}
+
+#resultados {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0; /* Reduzido para evitar espaço extra */
+    text-align: center;
+    color: #191c1d;
+}
+
+#carrinho-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    flex-grow: 1;
+}
+
+
+.card-container {
+   display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px; /* Padding apenas nas laterais */
+    width: 100%;
+    flex-grow: 1;
 }
 
 .card {
@@ -11,7 +166,18 @@
     padding: 15px;
     width: 200px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(25, 28, 29, 0.1); /* Sombra com #191c1d */
+    background-color: white;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 0; /* Removido min-height fixo para altura dinâmica */
+    height: auto; /* Altura ajustada ao conteúdo */
+}
+
+.card:hover {
+    transform: translateY(-2px);
 }
 
 .card img {
@@ -24,6 +190,7 @@
     font-size: 1.2em;
     margin: 10px 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #191c1d; /* Cinza Escuro para títulos */
 }
 
 .card p {
@@ -33,29 +200,288 @@
 }
 
 .buy-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4dc1ee; /* Azul Primário */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(25, 28, 29, 0.3); /* Sombra com #191c1d */
+    transition: all 0.3s ease;
+    width: 100%; /* Ocupa toda a largura do contêiner */
 }
+
 .buy-button:hover {
-  background-color: #0056b3;
+    background-color: #2a9fd6; /* Azul Escuro */
+    box-shadow: 0 4px 8px rgba(77, 193, 238, 0.4); /* Sombra com #4dc1ee */
+}
+
+.buy-button:disabled {
+    background-color: #d9e2e6; /* Cinza Claro */
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+#limpar-carrinho {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9800; /* Laranja para diferenciar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(25, 28, 29, 0.3); /* Sombra com #191c1d */
+    transition: all 0.3s ease;
+}
+
+#limpar-carrinho:hover {
+    background-color: #e68a00; /* Laranja mais escuro */
+    box-shadow: 0 4px 8px rgba(77, 193, 238, 0.4); /* Sombra com #4dc1ee */
 }
 
 .remove-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc3545; /* Vermelho Erro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(25, 28, 29, 0.3); /* Sombra com #191c1d */
+    transition: all 0.3s ease;
 }
+
 .remove-button:hover {
-  background-color: #c82333;
+    background-color: #c82333; /* Vermelho mais escuro */
+    box-shadow: 0 4px 8px rgba(77, 193, 238, 0.4); /* Sombra com #4dc1ee */
+}
+
+.cart-summary {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; /* Empilha os botões verticalmente por padrão */
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+#limpar-carrinho {
+    padding: 10px 20px;
+    background-color: #ff9800; /* Laranja para diferenciar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0; /* Espaçamento vertical entre botões */
+    box-shadow: 0 2px 4px rgba(25, 28, 29, 0.3);
+    transition: all 0.3s ease;
+    width: 200px;
+}
+/* Mudança: Ajustado #total para estar dentro do contêiner e centralizado */
+#total {
+    background-color: white;
+    padding: 10px;
+    border-radius: 13px;
+    font-size: 50pt;
+    color: #191c1d;
+    box-shadow: 0 2px 5px rgba(25, 28, 29, 0.1);
+    transition: all 0.3s ease;
+    margin: 10px 0; /* Reduzido margin para menos espaço */
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+#total:hover {
+    box-shadow: 0 4px 8px rgba(77, 193, 238, 0.4); /* Sombra com #4dc1ee */
+}
+
+#limpar-carrinho {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto; /* Centraliza horizontalmente */
+    box-shadow: 0 2px 4px rgba(25, 28, 29, 0.3);
+    transition: all 0.3s ease;
+}
+
+#limpar-carrinho:hover {
+    background-color: #e68a00;
+    box-shadow: 0 4px 8px rgba(77, 193, 238, 0.4);
+}
+
+#finalizar-compra {
+    padding: 10px 20px;
+    background-color: #28a745; /* Verde para indicar sucesso */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0; /* Espaçamento vertical entre botões */
+    box-shadow: 0 2px 4px rgba(25, 28, 29, 0.3);
+    transition: all 0.3s ease;
+    width: 200px; /* Largura fixa para consistência */
+}
+
+#finalizar-compra:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.4);
+}
+
+.success-message, .error-message {
+    position: fixed;
+    right: 20px;
+    top: calc(20px + var(--message-index, 0) * 60px);
+    background-color: #28a745; /* Verde Sucesso */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 1;
+    width: 300px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 2px 5px rgba(25, 28, 29, 0.3); /* Sombra com #191c1d */
+    transition: opacity 0.3s ease;
+}
+
+.error-message {
+    background-color: #dc3545; /* Vermelho Erro */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+    }
+
+    #form-busca {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #form-busca input {
+        width: 80%;
+        margin: 0;
+    }
+
+    #form-busca button {
+        width: 80%;
+        max-width: 150px;
+    }
+
+    .card {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .buy-button, .remove-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    #limpar-carrinho {
+        margin: 10px auto;
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    #total {
+        font-size: 30pt;
+        max-width: 400px;
+        margin: 5px 0; /* Reduzido margin em telas menores */
+    }
+
+    .cart-summary {
+        padding: 5px 20px; /* Reduzido padding em telas menores */
+    }
+
+    .success-message, .error-message {
+        width: 250px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        width: 90%;
+    }
+
+    #form-busca input {
+        width: 90%;
+        margin: 0;
+    }
+
+    #form-busca button {
+        width: 90%;
+        max-width: 120px;
+    }
+
+    .card {
+        width: 120px;
+        padding: 8px;
+    }
+
+    .card h3 {
+        font-size: 1em;
+    }
+
+    .buy-button, .remove-button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    #limpar-carrinho {
+        margin: 10px auto;
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    #total {
+        font-size: 20pt;
+        max-width: 300px;
+        margin: 5px 0; /* Reduzido margin em telas menores */
+    }
+
+    .cart-summary {
+        padding: 5px 20px; /* Reduzido padding em telas menores */
+    }
+
+    .success-message, .error-message {
+        width: 200px;
+        right: 5px;
+    }
 }
