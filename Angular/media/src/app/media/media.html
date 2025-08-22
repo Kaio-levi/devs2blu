@@ -1,0 +1,8 @@
+<form action="" (ngSubmit)="calcularMedia()" class="formulario">
+    <input #campoNota1="ngModel" type="number" name="nota1" id="nota1" [(ngModel)]="nota1" required min="0" max="10">
+    <input #campoNota2="ngModel"type="number" name="nota2" id="nota2" [(ngModel)]="nota2" required min="0" max="10">
+    <input #campoNota3 type="number" name="nota3" id="nota3" [(ngModel)]="nota3" required min="0" max="10">
+    <button type="submit">Calcular media</button>
+
+    <div id="media">A média do aluno é:{{media}}</div>
+</form>

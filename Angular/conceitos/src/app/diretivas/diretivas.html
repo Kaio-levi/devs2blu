@@ -1,0 +1,33 @@
+<!-- 
+    o que são diretivas?
+
+    R: são comandos para deixar o arquivo HTML mais dinâmico.
+
+    A partir de qual versão do angular esta dispnivel?
+    R: A partir da versão 2
+
+    Quais diretivas que estão depreciadas?
+    R: ngIf, ngSwitch e ngFor
+
+    Quais diretivas disponiveis?
+    R: ngModel ngStyle ngClass.
+-->
+
+<h1 [ngStyle]="{'color':corFonte, 'background':corFundo}">Ultilizando o ngStyle</h1>
+<h1 [ngStyle]="estilo">Ultilizando o ngStyle</h1>
+<button (click)="alterarEstilo()">Alterar estilo</button>
+
+<hr>
+
+@for (aluno of alunos; track $index) {
+    <p [ngClass]="aluno">{{aluno}}</p>
+}
+
+<hr>
+
+<!-- 
+[ngClass] <-Disponibiliza para a diretiva algum valor 
+evento <- quando não disponibilizar valor, os colchetes não são utilizados. 
+-->
+
+<h1 eventoMouse>Passe o cursor aqui!</h1>

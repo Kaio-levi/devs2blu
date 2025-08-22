@@ -1,0 +1,47 @@
+<!-- 
+ o que é controle de fluxo:
+ 
+ É uma técnica para deixar o arquivo HTML dinâmico.
+ Ele trabalha com o DOM, podendo: criar, remover, exibir e ocultar elementos.
+
+
+ A partir de qual versão do angular está disponível?
+ A partir da versão 17.
+
+ Quais são os controles de fluxo?
+
+ @if, @switch e @for.
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+-->
+
+<h1>COntroel de fluxo - @IF</h1>
+
+@if (media >= 7) {
+    <p>Aprovado</p>
+}@else if (media >= 5) {
+    <p>Em recuperação</p>
+}@else {
+    <p>Reprovado!</p>
+}
+
+<h1>Controle de flixo - @SWITCH</h1>
+
+@switch (linguagem) {
+    @case ('Java') {
+        <p>Liguagem de programação mantidada pela oracle</p>
+    }
+    @case ('C#') {
+        <p>Linguagem de programação mantida pela microsoft</p>
+    }
+    @default {
+        <p>Linguagem de programação mantida pela microsoft</p>
+    }
+}
+
+<h1>Controle de fluxo = @FOR</h1>
+@for (nome of nomes; track $index) {
+    <p>{{$index}} - {{nome}}</p>
+}@empty {
+    <p>Não há nomes para exibir</p>
+}
