@@ -1,0 +1,8 @@
+<form >
+    <input type="text" name="nome" [(ngModel)]="nome" placeholder="Nome" />
+    <input type="text" name="cidade" [(ngModel)]="cidade" placeholder="cidade" />
+    <input type="button" (click)="cadastrar()" value="Cadastrar" />
+</form>
+
+<p>Nome: {{nome}}</p>
+<p>Cidade: {{cidade}}</p>

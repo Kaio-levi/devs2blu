@@ -1,0 +1,35 @@
+<!-- 1 exemplo -->
+
+<!-- <a routerLink="/produto">Produto</a> -->
+<!-- <a routerLink="/produtodetalhes/1">Produto Detalhes</a> -->
+
+<!-- <hr> -->
+<!-- 2 exemplo -->
+
+<!-- <a [routerLink]="['/produto']">Produto</a> -->
+<!-- <a [routerLink]="['/produto',1]">Produto Detalhes</a> -->
+
+<!-- barra de navegação -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" routerLink="">Rotas</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    @if(existeToken){
+                        <a class="nav-link" (click)="sair()">Sair</a>
+                    }@else{
+                        <a class="nav-link" routerLink="/login">Login</a>
+                    }
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

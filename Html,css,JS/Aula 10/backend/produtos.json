@@ -3,7 +3,7 @@
     {
       "id": "001",
       "nome": "Processador AMD Ryzen 5 5600X",
-      "qtdEstoque": 50,
+      "qtdEstoque": 48,
       "imagem": "/backend/imagens/ryzen5600x.jpeg",
       "categoria": "Processador",
       "valor": 1299.9
@@ -36,7 +36,7 @@
       "id": "005",
       "nome": "Mouse Gamer Logitech G203 Lightsync",
       "imagem": "/backend/imagens/G203.jpeg",
-      "qtdEstoque": 79,
+      "qtdEstoque": 78,
       "categoria": "Mouse",
       "valor": 199.9
     },
