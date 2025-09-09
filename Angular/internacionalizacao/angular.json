@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blog": {
+    "internacionalizacao": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -25,12 +25,7 @@
               }
             ],
             "styles": [
-              "src/custom-theme.scss",
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-            ],
-            "scripts":[
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+              "src/styles.css"
             ]
           },
           "configurations": {
@@ -61,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "blog:build:production"
+              "buildTarget": "internacionalizacao:build:production"
             },
             "development": {
-              "buildTarget": "blog:build:development"
+              "buildTarget": "internacionalizacao:build:development"
             }
           },
           "defaultConfiguration": "development"
